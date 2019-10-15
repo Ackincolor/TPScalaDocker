@@ -15,7 +15,7 @@ router.get('/', function(req, res, next) {
 })
 
 var redis = require('redis');
-var client = redis.createClient(6379,"localhost");
+var client = redis.createClient(6379,"localhoct");
 
 client.on('connect', function() {
   console.log('Redis client connected');
